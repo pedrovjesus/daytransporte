@@ -4,7 +4,7 @@ import React from "react";
 
 export function Hero() {
   return (
-    <section className="relative w-full h-[600px] mt-13">
+    <section id="home" className="relative w-full h-[600px] mt-13">
       {/* Background */}
       <Image
         src={heroImg}

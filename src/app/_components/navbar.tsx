@@ -5,7 +5,7 @@ import Image from "next/image";
 import {
   MapPinIcon,
   EnvelopeIcon,
-  PhoneIncomingIcon
+  PhoneIncomingIcon,
 } from "@phosphor-icons/react/dist/ssr";
 
 export function Navbar() {
@@ -61,7 +61,7 @@ export function Navbar() {
           <ul className="flex space-x-6">
             <li>
               <a
-                href="/"
+                href="#home"
                 className="text-black hover:text-white hover:font-bold transition text-[18px] font-[Rubik]"
               >
                 Home
@@ -69,10 +69,10 @@ export function Navbar() {
             </li>
             <li>
               <a
-                href="/about"
+                href="#sobre"
                 className="text-black hover:text-white hover:font-bold transition text-[18px] font-[Rubik]"
               >
-                About
+                Sobre
               </a>
             </li>
             <li>
@@ -80,7 +80,7 @@ export function Navbar() {
                 href="/contact"
                 className="text-black hover:text-white hover:font-bold transition text-[18px] font-[Rubik]"
               >
-                Contact
+                Contato
               </a>
             </li>
           </ul>
