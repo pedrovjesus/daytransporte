@@ -4,6 +4,7 @@ import { Hero } from "./_components/hero";
 import { Navbar } from "./_components/navbar";
 import { Service } from "./_components/servicos";
 import { WeServices } from "./_components/nossos-servicos";
+import { Contacts } from "./_components/contatos";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <About />
       <Service />
       <WeServices />
+      <Contacts />
       <Footer />
     </div>
   );

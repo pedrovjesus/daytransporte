@@ -77,7 +77,7 @@ export function Navbar() {
             </li>
             <li>
               <a
-                href="/contact"
+                href="#contato"
                 className="text-black hover:text-white hover:font-bold transition text-[18px] font-[Rubik]"
               >
                 Contato

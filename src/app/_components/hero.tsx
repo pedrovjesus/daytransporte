@@ -17,7 +17,7 @@ export function Hero() {
 
       {/* Conteúdo acima do background */}
       <div className="relative z-10 flex items-center justify-center h-full">
-        <div className="text-center text-white w-[38vw] h-[38vw] bg-gradient-to-b from-yellow-300/80 to-black/70 p-6 rounded-full shadow-lg flex flex-col items-center justify-center space-y-4">
+        <div className="text-center text-white w-[38vw] h-[38vw] bg-gradient-to-b from-yellow-500/80 to-black/70 p-6 rounded-full shadow-lg flex flex-col items-center justify-center space-y-4">
           <h1 className="text-[6vw] font-extrabold text-white whitespace-nowrap overflow-visible">
             Rápido & seguro
           </h1>
