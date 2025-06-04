@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import logo from "../../../public/logo.jpeg";
 import Image from "next/image";
 import {
@@ -9,81 +9,126 @@ import {
 } from "@phosphor-icons/react/dist/ssr";
 
 export function Navbar() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
   return (
-    <nav className="fixed top-0 left-0 w-full z-50 bg-gradient-to-r from-yellow-300 to-yellow-600 pt-4 pb-4 px-4 shadow-md">
-      <div className="container mx-auto flex justify-between items-center relative">
-        <div className="absolute left-[-1.4rem] top-[-0.4rem]">
+    <nav className="fixed top-0 left-0 w-full z-50 bg-gradient-to-r from-yellow-300 to-yellow-600 sm:pt-4 sm:pb-4 sm:px-4 p-1 shadow-md">
+      <div className="container mx-auto flex flex-wrap items-center justify-between relative">
+        {/* Logo */}
+        <div
+          className={`
+    ${menuOpen ? "hidden" : "flex"} 
+    flex-row items-center 
+    sm:absolute sm:left-[-1.5rem] sm:top-[-0.6rem] sm:ml-4 sm:mt-2
+  `}
+        >
           <Image
             src={logo}
             alt="DayTransporte"
             quality={100}
             priority
-            className="rounded-[5px] w-[160px] h-[80px] object-cover"
+            className="rounded-[5px] sm:w-[160px] sm:h-[80px] w-[8rem] h-[4.3rem] object-cover"
           />
         </div>
-        <div className="flex items-center space-x-4 ml-45">
-          <div className="text-white flex items-center gap-1">
-            <div className="rounded-[50%] bg-[#000000b9] mr-1  p-[0.5rem]">
-              <MapPinIcon weight="fill" className="w-7 h-7 text-[#FFF]" />
+
+        {/* Botão hamburguer mobile */}
+        <button
+          className="md:hidden z-60 ml-auto block text-black"
+          onClick={() => setMenuOpen(!menuOpen)}
+          aria-label="Toggle menu"
+        >
+          <svg
+            className="w-8 h-8"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            {menuOpen ? (
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M6 18L18 6M6 6l12 12"
+              />
+            ) : (
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+            )}
+          </svg>
+        </button>
+
+        {/* Contato e informações - ocultar no mobile e mostrar no md */}
+        <div className="hidden md:flex items-center space-x-6 ml-[180px]">
+          {/* Localização */}
+          <div className="flex items-center gap-1">
+            <div className="rounded-full bg-[#000000b9] p-2">
+              <MapPinIcon weight="fill" className="w-7 h-7 text-white" />
             </div>
-            <div className="flex-direction: column items-start text-black">
-              <h3 className="text-[#292929] text-[1rem]">Estamos aqui!</h3>
-              <p className="text-[0.8rem]">
-                Rua exemplo, 22 - centro, Campinas
-              </p>
+            <div className="flex flex-col items-start text-black">
+              <h3 className="text-[#292929] text-base">Estamos aqui!</h3>
+              <p className="text-sm">Rua exemplo, 22 - centro, Campinas</p>
             </div>
           </div>
-          <div className="text-white flex items-center gap-1">
-            <div className="rounded-[50%] bg-[#000000b9] mr-1  p-[0.5rem]">
-              <PhoneIncomingIcon className="w-7 h-7 text-[#FFF]" />
+
+          {/* Telefone */}
+          <div className="flex items-center gap-1">
+            <div className="rounded-full bg-[#000000b9] p-2">
+              <PhoneIncomingIcon className="w-7 h-7 text-white" />
             </div>
-            <div className="flex-direction: column items-start text-black">
-              <h3 className="text-[#292929] text-[1rem]">Fale conosco</h3>
-              <a href="#" className="text-[0.8rem] hover:underline">
+            <div className="flex flex-col items-start text-black">
+              <h3 className="text-[#292929] text-base">Fale conosco</h3>
+              <a href="#" className="text-sm hover:underline">
                 (19) 998374-6788
               </a>
             </div>
           </div>
-          <div className="text-white flex items-center gap-1">
-            <div className="rounded-[50%] bg-[#000000b9] mr-1  p-[0.5rem]">
-              <EnvelopeIcon className="w-7 h-7 text-[#FFF]" />
+
+          {/* Email */}
+          <div className="flex items-center gap-1">
+            <div className="rounded-full bg-[#000000b9] p-2">
+              <EnvelopeIcon className="w-7 h-7 text-white" />
             </div>
-            <div className="flex-direction: column items-start text-black">
-              <h3 className="text-[#000000] text-[1rem] font-medium">Email</h3>
-              <a href="#" className="text-[0.8rem] hover:underline">
+            <div className="flex flex-col items-start text-black">
+              <h3 className="text-[#000000] text-base font-medium">Email</h3>
+              <a href="#" className="text-sm hover:underline">
                 contato@daytransportes.com
               </a>
             </div>
           </div>
         </div>
 
-        <div className="ml-auto flex space-x-8 items-center">
-          <ul className="flex space-x-6">
-            <li>
-              <a
-                href="#home"
-                className="text-black hover:text-white hover:font-bold transition text-[18px] font-[Rubik]"
-              >
-                Home
-              </a>
-            </li>
-            <li>
-              <a
-                href="#sobre"
-                className="text-black hover:text-white hover:font-bold transition text-[18px] font-[Rubik]"
-              >
-                Sobre
-              </a>
-            </li>
-            <li>
-              <a
-                href="#contato"
-                className="text-black hover:text-white hover:font-bold transition text-[18px] font-[Rubik]"
-              >
-                Contato
-              </a>
-            </li>
-          </ul>
+        {/* Menu de navegação */}
+        <div
+          className={`${
+            menuOpen ? "flex" : "hidden"
+          } w-full md:flex md:w-auto ml-auto flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-8 mt-4 md:mt-0`}
+        >
+          <a
+            href="#home"
+            className="text-black hover:text-white hover:font-bold transition text-[18px] font-Rubik"
+            onClick={() => setMenuOpen(false)}
+          >
+            Home
+          </a>
+          <a
+            href="#sobre"
+            className="text-black hover:text-white hover:font-bold transition text-[18px] font-Rubik"
+            onClick={() => setMenuOpen(false)}
+          >
+            Sobre
+          </a>
+          <a
+            href="#contato"
+            className="text-black hover:text-white hover:font-bold transition text-[18px] font-Rubik"
+            onClick={() => setMenuOpen(false)}
+          >
+            Contato
+          </a>
         </div>
       </div>
     </nav>

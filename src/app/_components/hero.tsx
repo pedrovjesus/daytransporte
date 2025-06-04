@@ -12,17 +12,17 @@ export function Hero() {
         fill
         quality={100}
         priority
-        className="object-cover z-0"
+        className="object-cover z-0 brightness-30 sm:brightness-100"
       />
 
       {/* Conteúdo acima do background */}
       <div className="relative z-10 flex items-center justify-center h-full">
-        <div className="text-center text-white w-[38vw] h-[38vw] bg-gradient-to-b from-yellow-500/80 to-black/70 p-6 rounded-full shadow-lg flex flex-col items-center justify-center space-y-4">
+        <div className="text-center text-white sm:w-[38vw] sm:h-[38vw] sm:bg-gradient-to-b sm:from-yellow-500/80 sm:to-black/70 p-6 sm:rounded-full sm:shadow-lg flex flex-col items-center justify-center space-y-4">
           <h1 className="text-[6vw] font-extrabold text-white whitespace-nowrap overflow-visible">
             Rápido & seguro
           </h1>
           <h2
-            className="text-6xl font-semibold text-transparent"
+            className="sm:text-6xl text-4xl font-semibold text-transparent"
             style={{
               WebkitTextStroke: "2px #facc40",
             }}
