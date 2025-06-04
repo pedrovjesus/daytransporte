@@ -12,7 +12,7 @@ export function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 left-0 w-full z-50 bg-gradient-to-r from-yellow-300 to-yellow-600 sm:pt-4 sm:pb-4 sm:px-4 p-1 shadow-md">
+    <nav className="fixed top-0 left-0 w-[100%] z-50 bg-gradient-to-r from-yellow-300 to-yellow-600 sm:pt-4 sm:pb-4 sm:px-4 p-1 shadow-md">
       <div className="container mx-auto flex flex-wrap items-center justify-between relative">
         {/* Logo */}
         <div
