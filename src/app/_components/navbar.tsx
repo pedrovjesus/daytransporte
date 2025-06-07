@@ -12,7 +12,7 @@ export function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 left-0 w-[100%] z-50 bg-gradient-to-r from-yellow-300 to-yellow-600 sm:pt-4 sm:pb-4 sm:px-4 p-1 shadow-md">
+    <nav className="fixed top-0 left-0 w-full z-50 bg-gradient-to-r from-black to-black sm:pt-4 sm:pb-4 sm:px-4 p-1 shadow-md">
       <div className="container mx-auto flex flex-wrap items-center justify-between relative">
         {/* Logo */}
         <div
@@ -33,7 +33,7 @@ export function Navbar() {
 
         {/* Botão hamburguer mobile */}
         <button
-          className="md:hidden z-60 ml-auto block text-black"
+          className="md:hidden z-60 ml-auto block text-yellow-600"
           onClick={() => setMenuOpen(!menuOpen)}
           aria-label="Toggle menu"
         >
@@ -63,26 +63,26 @@ export function Navbar() {
         </button>
 
         {/* Contato e informações - ocultar no mobile e mostrar no md */}
-        <div className="hidden md:flex items-center space-x-6 ml-[180px]">
+        <div className="hidden xl:flex items-center space-x-6 ml-[180px]">
           {/* Localização */}
           <div className="flex items-center gap-1">
-            <div className="rounded-full bg-[#000000b9] p-2">
+            <div className="rounded-full bg-[#cacacab9] p-2">
               <MapPinIcon weight="fill" className="w-7 h-7 text-white" />
             </div>
             <div className="flex flex-col items-start text-black">
-              <h3 className="text-[#292929] text-base">Estamos aqui!</h3>
-              <p className="text-sm">Rua exemplo, 22 - centro, Campinas</p>
+              <h3 className="text-white text-base">Estamos aqui!</h3>
+              <p className="text-sm text-white">Rua exemplo, 22 - centro, Campinas</p>
             </div>
           </div>
 
           {/* Telefone */}
           <div className="flex items-center gap-1">
-            <div className="rounded-full bg-[#000000b9] p-2">
+            <div className="rounded-full bg-[#cacacab9] p-2">
               <PhoneIncomingIcon className="w-7 h-7 text-white" />
             </div>
             <div className="flex flex-col items-start text-black">
-              <h3 className="text-[#292929] text-base">Fale conosco</h3>
-              <a href="#" className="text-sm hover:underline">
+              <h3 className="text-white text-base">Fale conosco</h3>
+              <a href="#" className="text-sm text-white hover:underline">
                 (19) 998374-6788
               </a>
             </div>
@@ -90,12 +90,12 @@ export function Navbar() {
 
           {/* Email */}
           <div className="flex items-center gap-1">
-            <div className="rounded-full bg-[#000000b9] p-2">
+            <div className="rounded-full bg-[#cacacab9] p-2">
               <EnvelopeIcon className="w-7 h-7 text-white" />
             </div>
             <div className="flex flex-col items-start text-black">
-              <h3 className="text-[#000000] text-base font-medium">Email</h3>
-              <a href="#" className="text-sm hover:underline">
+              <h3 className="text-white text-base font-medium">Email</h3>
+              <a href="#" className="text-sm text-white hover:underline">
                 contato@daytransportes.com
               </a>
             </div>
@@ -110,21 +110,21 @@ export function Navbar() {
         >
           <a
             href="#home"
-            className="text-black hover:text-white hover:font-bold transition text-[18px] font-Rubik"
+            className="text-white hover:text-white hover:font-bold transition text-[18px] font-Rubik"
             onClick={() => setMenuOpen(false)}
           >
             Home
           </a>
           <a
             href="#sobre"
-            className="text-black hover:text-white hover:font-bold transition text-[18px] font-Rubik"
+            className="text-white hover:text-white hover:font-bold transition text-[18px] font-Rubik"
             onClick={() => setMenuOpen(false)}
           >
             Sobre
           </a>
           <a
             href="#contato"
-            className="text-black hover:text-white hover:font-bold transition text-[18px] font-Rubik"
+            className="text-white hover:text-white hover:font-bold transition text-[18px] font-Rubik"
             onClick={() => setMenuOpen(false)}
           >
             Contato

@@ -12,7 +12,7 @@ export function Service() {
       {/* Imagem de fundo escurecida */}
       <Image
         src={bgService}
-        alt="Serviços da DayTransporte"
+        alt="Serviços da Day Transportes"
         fill
         quality={100}
         priority
@@ -22,7 +22,7 @@ export function Service() {
       {/* Conteúdo sobre a imagem */}
       <div className="relative z-10 flex flex-col justify-center h-full px-6 max-w-4xl mx-auto text-white">
         <h1 className="text-3xl font-bold mb-4">
-          Por que escolher a DayTransporte?
+          Por que escolher a Day Transportes?
         </h1>
         <p className="mb-6 text-lg max-w-2xl">
           Com anos de experiência em{" "}

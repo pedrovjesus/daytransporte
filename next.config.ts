@@ -5,6 +5,9 @@ const repo = "daytransporte"; // ⬅️ altere para o nome real do seu repositó
 
 const nextConfig: NextConfig = {
   output: "export",
+  images: {
+    unoptimized: true,
+  },
   basePath: isGithubPages ? `/${repo}` : "",
   assetPrefix: isGithubPages ? `/${repo}/` : "",
   trailingSlash: true,

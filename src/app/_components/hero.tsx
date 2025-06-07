@@ -4,7 +4,7 @@ import React from "react";
 
 export function Hero() {
   return (
-    <section id="home" className="relative w-full h-[600px] mt-13">
+    <section id="home" className="relative w-full xl:h-[630px] h-[540px]">
       {/* Background */}
       <Image
         src={heroImg}
@@ -17,17 +17,17 @@ export function Hero() {
 
       {/* Conteúdo acima do background */}
       <div className="relative z-10 flex items-center justify-center h-full">
-        <div className="text-center text-white sm:w-[38vw] sm:h-[38vw] sm:bg-gradient-to-b sm:from-yellow-500/80 sm:to-black/70 p-6 sm:rounded-full sm:shadow-lg flex flex-col items-center justify-center space-y-4">
+        <div className="text-center ml-[5rem] xl:mt-[4.2rem] md:mt-[2.2rem] text-white sm:w-[50vw] sm:h-[30vw] sm:bg-gradient-to-b sm:from-yellow-500/80 sm:to-black/70 p-6 sm:shadow-lg flex flex-col items-center justify-center space-y-4">
           <h1 className="text-[6vw] font-extrabold text-white whitespace-nowrap overflow-visible">
             Rápido & seguro
           </h1>
           <h2
-            className="sm:text-6xl text-4xl font-semibold text-transparent"
+            className="sm:text-5xl text-4xl font-semibold text-transparent"
             style={{
               WebkitTextStroke: "2px #facc40",
             }}
           >
-            DAYTRANSPORTES
+            DAY TRANSPORTES
           </h2>
           <button className="mt-4 px-6 py-2 border-2 border-yellow-400 text-white font-semibold rounded hover:bg-yellow-400 hover:text-black transition">
             Descubra mais

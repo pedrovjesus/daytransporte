@@ -13,9 +13,12 @@ export function Contacts() {
         className="object-cover brightness-50 z-0"
       />
       <div className="relative z-10 flex flex-col justify-center px-6 py-16 max-w-6xl mx-auto text-white">
-        <h2 className="text-3xl font-bold mb-8">Entre em Contato</h2>
+        <h2 className="text-3xl font-bold mb-8 text-center">
+          Entre em Contato
+        </h2>
+
         <form className="flex flex-col md:flex-row gap-6 w-full">
-          <div className="flex flex-col gap-4 md:w-1/2">
+          <div className="flex flex-col gap-4 w-full md:w-1/2">
             <input
               type="text"
               placeholder="Seu nome"
@@ -33,7 +36,7 @@ export function Contacts() {
             />
           </div>
 
-          <div className="md:w-1/2">
+          <div className="w-full md:w-1/2">
             <textarea
               placeholder="Sua mensagem"
               rows={7}
@@ -41,10 +44,11 @@ export function Contacts() {
             ></textarea>
           </div>
         </form>
-        <div className="mt-6">
+
+        <div className="mt-6 flex justify-center">
           <button
             type="submit"
-            className="mt-4 px-6 py-2 border-2 border-yellow-400 text-white font-semibold rounded hover:bg-yellow-400 hover:text-black transition"
+            className="w-full max-w-sm px-6 py-3 border-2 border-yellow-400 text-white font-semibold rounded hover:bg-yellow-400 hover:text-black transition"
           >
             Enviar Mensagem
           </button>

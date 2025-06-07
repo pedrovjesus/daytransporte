@@ -11,8 +11,8 @@ export function Footer() {
     { id: 3, titulo: "Linkedin", link: "#", icon: LinkedinLogoIcon },
   ];
   return (
-    <div className="flex text-center flex-col w-[100%] h-[4.5rem] justify-center">
-      <h1>2025 Day Transportes, All Rights Reserved.</h1>
+    <div className="flex text-center flex-col w-[100%] h-[4.5rem] mt-1 justify-center">
+      <h1>2025 Day Transportes &copy; All Rights Reserved. </h1>
       <ul className="flex justify-center gap-4 mt-2">
         {socials.map((item) => {
           const Icon = item.icon; // <- Pegamos o componente e colocamos em maiúscula
@@ -26,7 +26,7 @@ export function Footer() {
         })}
       </ul>
       <h2 className="text-sm mt-2">
-        Desenvolvido por
+        Desenvolvido por{" "}
         <strong className="text-red-400">
           <a
             href="https://github.com/pedrovjesus"

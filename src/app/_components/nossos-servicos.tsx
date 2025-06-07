@@ -4,7 +4,7 @@ export function WeServices() {
       <h1 className="text-4xl font-bold text-gray-900 mb-6">Nossos Serviços</h1>
 
       <p className="text-lg text-gray-700 mb-8">
-        A <strong>DayTransporte</strong> oferece soluções completas em
+        A <strong>Day Transportes</strong> oferece soluções completas em
         transporte e logística, atendendo empresas e demandas em todo o
         território nacional. Nossos serviços são projetados para garantir
         eficiência, pontualidade e segurança em cada etapa do processo.
@@ -17,7 +17,7 @@ export function WeServices() {
           </h2>
           <p className="text-gray-600">
             Cargas fracionadas ou completas com cobertura nacional e motoristas
-            experientes.
+            altamente capacitados.
           </p>
         </div>
 
@@ -36,7 +36,8 @@ export function WeServices() {
             Coletas e Entregas Expressas
           </h2>
           <p className="text-gray-600">
-            Atendimentos ágeis com prazos reduzidos para demandas urgentes.
+            Especialistas em logística rápida, com atendimento ágil e prazos
+            otimizados para cargas urgentes
           </p>
         </div>
 
@@ -45,8 +46,8 @@ export function WeServices() {
             Transporte Personalizado
           </h2>
           <p className="text-gray-600">
-            Soluções sob medida para setores específicos como saúde, tecnologia
-            e alimentos.
+            Fretamento particulares, serviços de segurança, transporte no
+            aeroporto, transporte de cargas transferências
           </p>
         </div>
 
