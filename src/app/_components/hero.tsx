@@ -1,39 +1,78 @@
-import heroImg from "../../../public/hero.jpeg";
+"use client";
+
+import { BsChevronLeft, BsChevronRight } from "react-icons/bs";
+import { useState } from "react";
 import Image from "next/image";
-import React from "react";
+
+// Imagens locais
+import img1 from "../../../public/caminhao4.jpg";
+import img2 from "../../../public/caminhao2.jpg";
+import img3 from "../../../public/caminhao3.jpg";
+import img4 from "../../../public/caminhao5.jpg";
+import img5 from "../../../public/caminhao6.jpeg";
+
+// Simula dados como a API retornaria
+const mockData = [
+  { id: 1, url: img1 },
+  { id: 2, url: img2 },
+  { id: 3, url: img3 },
+  { id: 4, url: img4 },
+  { id: 5, url: img5 },
+];
 
 export function Hero() {
-  return (
-    <section id="home" className="relative w-full xl:h-[630px] h-[540px]">
-      {/* Background */}
-      <Image
-        src={heroImg}
-        alt="Hero Image"
-        fill
-        quality={100}
-        priority
-        className="object-cover z-0 brightness-30 sm:brightness-100"
-      />
+  const [slideIdx, setSlideIdx] = useState(0);
+  const slides = mockData.length;
 
-      {/* Conteúdo acima do background */}
-      <div className="relative z-10 flex items-center justify-center h-full">
-        <div className="text-center ml-[5rem] xl:mt-[4.2rem] md:mt-[2.2rem] text-white sm:w-[50vw] sm:h-[30vw] sm:bg-gradient-to-b sm:from-yellow-500/80 sm:to-black/70 p-6 sm:shadow-lg flex flex-col items-center justify-center space-y-4">
-          <h1 className="text-[6vw] font-extrabold text-white whitespace-nowrap overflow-visible">
-            Rápido & seguro
-          </h1>
-          <h2
-            className="sm:text-5xl text-4xl font-semibold text-transparent"
-            style={{
-              WebkitTextStroke: "2px #facc40",
-            }}
-          >
-            DAY TRANSPORTES
-          </h2>
-          <button className="mt-4 px-6 py-2 border-2 border-yellow-400 text-white font-semibold rounded hover:bg-yellow-400 hover:text-black transition">
-            Descubra mais
-          </button>
+  const handlePrevSlide = () => {
+    setSlideIdx((prev) => (prev + slides - 1) % slides);
+  };
+
+  const handleNextSlide = () => {
+    setSlideIdx((prev) => (prev + 1) % slides);
+  };
+
+  const handleChangeIdx = (index: number) => {
+    setSlideIdx(index);
+  };
+
+  return (
+    <div className="relative w-full xl:h-[450px] mt-19 h-[450px] overflow-hidden group">
+      {/* Todas as imagens empilhadas, controladas por opacity */}
+      {mockData.map((slide, index) => (
+        <div
+          key={slide.id}
+          className={`absolute top-0 left-0 w-full h-full transition-opacity duration-700 ease-in-out ${
+            index === slideIdx ? "opacity-100 z-10" : "opacity-0 z-0"
+          }`}
+        >
+          <div className="w-full h-full relative flex items-center justify-center">
+            <Image
+              src={slide.url}
+              alt={`Slide ${index + 1}`}
+              fill
+              className="object-cover object-center"
+            />
+          </div>
         </div>
-      </div>
-    </section>
+      ))}
+
+      {/* Botões de navegação */}
+      <button
+        className="absolute top-1/2 left-4 transform -translate-y-1/2 text-white text-3xl z-20 hover:scale-125 transition-transform"
+        onClick={handlePrevSlide}
+        aria-label="Anterior"
+      >
+        <BsChevronLeft />
+      </button>
+
+      <button
+        className="absolute top-1/2 right-4 transform -translate-y-1/2 text-white text-3xl z-20 hover:scale-125 transition-transform"
+        onClick={handleNextSlide}
+        aria-label="Próximo"
+      >
+        <BsChevronRight />
+      </button>
+    </div>
   );
 }
