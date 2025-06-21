@@ -1,3 +1,4 @@
+import Link from "next/link";
 import car1 from "../../../public/caminhao1.jpeg";
 import car2 from "../../../public/caminhao2.jpeg";
 import Image from "next/image";
@@ -62,12 +63,12 @@ export function About() {
                 Mais do que transportar cargas, levamos a confiança e os
                 objetivos dos nossos clientes.
               </p>
-              <a
-                href="#"
+              <Link
+                href="/about"
                 className="w-full max-w-sm px-6 py-3 border-2 border-yellow-400 text-black font-semibold rounded hover:bg-yellow-400 hover:text-black transition"
               >
                 Saiba mais
-              </a>
+              </Link>
             </section>
           </div>
         </div>

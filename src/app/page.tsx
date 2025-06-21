@@ -5,6 +5,7 @@ import { Navbar } from "./_components/navbar";
 import { Service } from "./_components/servicos";
 import { WeServices } from "./_components/nossos-servicos";
 import { Contacts } from "./_components/contatos";
+import { SubFooter } from "./_components/subfooter";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <WeServices />
       <Contacts />
       <Footer />
+      <SubFooter />
     </div>
   );
 }
