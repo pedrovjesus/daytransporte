@@ -12,31 +12,31 @@ const mockData = [
   {
     id: 1,
     url: img1,
-    title: "Caminhão Forte",
+    title: "CAMINHÃO PESADO",
     description: "Especializados em transporte de cargas pesadas",
   },
   {
     id: 2,
     url: img2,
-    title: "Estrada Segura",
+    title: "LONGA DISTÂNCIAS",
     description: "Viagens longas com segurança e conforto",
   },
   {
     id: 3,
     url: img3,
-    title: "Agilidade Garantida",
+    title: "AGILIDADE",
     description: "Rapidez na entrega de sua carga",
   },
   {
     id: 4,
     url: img4,
-    title: "Confiança Total",
+    title: "CONFIANÇA TOTAL",
     description: "Clientes satisfeitos com nosso serviço",
   },
   {
     id: 5,
     url: img5,
-    title: "Tecnologia de Ponta",
+    title: "TECNOLOGIA ",
     description: "Frota moderna e equipada para sua segurança",
   },
 ];
@@ -58,12 +58,12 @@ export function Hero() {
   };
 
   return (
-    <div className="relative w-full xl:h-[450px] mt-19 h-[450px] overflow-hidden group">
+    <div className="relative w-full xl:h-[450px] mt-19 h-[300px] overflow-hidden group">
       {/* Todas as imagens empilhadas, controladas por opacity */}
       {mockData.map((slide, index) => (
         <div
           key={slide.id}
-          className={`absolute top-0 left-0 w-full h-full transition-opacity duration-700 ease-in-out ${
+          className={`absolute top-0 left-0 w-full h-full transition-opacity duration-900 ease-in-out ${
             index === slideIdx ? "opacity-100 z-10" : "opacity-0 z-0"
           }`}
         >
@@ -75,9 +75,9 @@ export function Hero() {
               className="object-cover object-center"
             />
             {/* Caixa de texto sobre a imagem */}
-            <div className="absolute bottom-5 left-10 pb-[1rem] w-[32rem] h-[10rem] bg-black/60 text-white p-4 flex-col justify-around flex items-start">
-              <h1 className="text-5xl ">{slide.title}</h1>
-              <p className="text-3xl font-bold">{slide.description}</p>
+            <div className="absolute bottom-5 sm:left-10 sm:w-[32rem] sm:h-[10rem] w-[27rem] h-[5rem] bg-black/60 text-white p-4 flex-col text-center sm:text-start justify-around flex sm:items-start">
+              <h1 className="sm:text-5xl">{slide.title}</h1>
+              <p className="sm:text-3xl font-bold">{slide.description}</p>
             </div>
           </div>
         </div>
