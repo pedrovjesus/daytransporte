@@ -1,23 +1,44 @@
 "use client";
-
 import { BsChevronLeft, BsChevronRight } from "react-icons/bs";
 import { useState } from "react";
 import Image from "next/image";
-
-// Imagens locais
 import img1 from "../../../public/caminhao4.jpg";
 import img2 from "../../../public/caminhao2.jpg";
 import img3 from "../../../public/caminhao3.jpg";
 import img4 from "../../../public/caminhao5.jpg";
 import img5 from "../../../public/caminhao6.jpeg";
 
-// Simula dados como a API retornaria
 const mockData = [
-  { id: 1, url: img1 },
-  { id: 2, url: img2 },
-  { id: 3, url: img3 },
-  { id: 4, url: img4 },
-  { id: 5, url: img5 },
+  {
+    id: 1,
+    url: img1,
+    title: "Caminhão Forte",
+    description: "Especializados em transporte de cargas pesadas",
+  },
+  {
+    id: 2,
+    url: img2,
+    title: "Estrada Segura",
+    description: "Viagens longas com segurança e conforto",
+  },
+  {
+    id: 3,
+    url: img3,
+    title: "Agilidade Garantida",
+    description: "Rapidez na entrega de sua carga",
+  },
+  {
+    id: 4,
+    url: img4,
+    title: "Confiança Total",
+    description: "Clientes satisfeitos com nosso serviço",
+  },
+  {
+    id: 5,
+    url: img5,
+    title: "Tecnologia de Ponta",
+    description: "Frota moderna e equipada para sua segurança",
+  },
 ];
 
 export function Hero() {
@@ -53,6 +74,11 @@ export function Hero() {
               fill
               className="object-cover object-center"
             />
+            {/* Caixa de texto sobre a imagem */}
+            <div className="absolute bottom-5 left-10 pb-[1rem] w-[32rem] h-[10rem] bg-black/60 text-white p-4 flex-col justify-around flex items-start">
+              <h1 className="text-5xl ">{slide.title}</h1>
+              <p className="text-3xl font-bold">{slide.description}</p>
+            </div>
           </div>
         </div>
       ))}
