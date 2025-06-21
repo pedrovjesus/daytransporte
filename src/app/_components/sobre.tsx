@@ -62,6 +62,12 @@ export function About() {
                 Mais do que transportar cargas, levamos a confiança e os
                 objetivos dos nossos clientes.
               </p>
+              <a
+                href="#"
+                className="w-full max-w-sm px-6 py-3 border-2 border-yellow-400 text-black font-semibold rounded hover:bg-yellow-400 hover:text-black transition"
+              >
+                Saiba mais
+              </a>
             </section>
           </div>
         </div>
@@ -71,7 +77,6 @@ export function About() {
         className="hidden md:flex lg:hidden px-6 py-8 max-w-7xl mx-auto items-center gap-10"
         style={{ minHeight: "650px" }}
       >
-        {/* Imagem grande car1 à esquerda */}
         <div className="flex-shrink-0 w-[40vw] max-w-[600px] h-[500px] relative rounded shadow-lg overflow-hidden">
           <Image
             src={car1}
@@ -112,6 +117,12 @@ export function About() {
               do que transportar cargas, levamos a confiança e os objetivos dos
               nossos clientes.
             </p>
+            <a
+              href="#"
+              className="mt-1 block max-w-sm px-2 py-2 border-2 border-yellow-400 text-black font-semibold rounded hover:bg-yellow-400 hover:text-black transition"
+            >
+              Saiba mais
+            </a>
           </section>
         </div>
       </section>
@@ -119,7 +130,6 @@ export function About() {
       {/* MOBILE */}
       <section className="block md:hidden p-4">
         <div className="flex flex-col items-center gap-6 max-w-7xl mx-auto">
-          {/* Apenas uma imagem com flexbox */}
           <div className="w-[280px] h-[280px] rounded shadow-lg overflow-hidden relative">
             <Image
               src={car1}
@@ -131,7 +141,6 @@ export function About() {
             />
           </div>
 
-          {/* Texto abaixo da imagem */}
           <div className="text-gray-800 max-w-xl">
             <h2 className="text-2xl font-bold mb-4">Sobre Nós</h2>
             <section className="mb-8">
@@ -158,6 +167,12 @@ export function About() {
                 Mais do que transportar cargas, levamos a confiança e os
                 objetivos dos nossos clientes.
               </p>
+              <a
+                href="#"
+                className="w-full max-w-sm px-6 py-3 border-2 border-yellow-400 text-black font-semibold rounded hover:bg-yellow-400 hover:text-black transition"
+              >
+                Saiba mais
+              </a>
             </section>
           </div>
         </div>
