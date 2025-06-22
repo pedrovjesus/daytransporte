@@ -5,14 +5,14 @@ export function Footer() {
         {/* Endereço */}
         <div>
           <h4 className="text-lg font-semibold mb-2">Endereço</h4>
-          <p>Rua das Transportadoras, 123</p>
-          <p>Campinas – SP, 13000-000</p>
+          <p>R. Josélio Manuel da Silva, 142</p>
+          <p>Hortôlandia – SP - 13183-091</p>
         </div>
 
         {/* Contato */}
         <div>
           <h4 className="text-lg font-semibold mb-2">Contato</h4>
-          <p>Telefone: (19) 99999-9999</p>
+          <p>Telefone: (19) 98888-8102</p>
           <p>Email: contato@daytransporte.com.br</p>
         </div>
 
