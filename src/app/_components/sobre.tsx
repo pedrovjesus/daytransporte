@@ -37,7 +37,7 @@ export function About() {
           </div>
 
           {/* Texto */}
-          <div className="p-6 text-gray-800 max-w-3xl mx-auto">
+          <div className="p-6 text-gray-800 max-w-3xl mx-auto ml-2">
             <h2 className="text-2xl font-bold mb-4">Sobre Nós</h2>
             <section className="mb-8">
               <h2 className="text-xl font-bold mb-4">Sobre a DayTransporte</h2>
@@ -118,12 +118,12 @@ export function About() {
               do que transportar cargas, levamos a confiança e os objetivos dos
               nossos clientes.
             </p>
-            <a
-              href="#"
+            <Link
+              href="/about"
               className="mt-1 block max-w-sm px-2 py-2 border-2 border-yellow-400 text-black font-semibold rounded hover:bg-yellow-400 hover:text-black transition"
             >
               Saiba mais
-            </a>
+            </Link>
           </section>
         </div>
       </section>
@@ -168,12 +168,12 @@ export function About() {
                 Mais do que transportar cargas, levamos a confiança e os
                 objetivos dos nossos clientes.
               </p>
-              <a
-                href="#"
-                className="w-full max-w-sm px-6 py-3 border-2 border-yellow-400 text-black font-semibold rounded hover:bg-yellow-400 hover:text-black transition"
+              <Link
+                href="/about"
+                className="block w-full text-center px-6 py-4 text-lg border-2 border-yellow-400 text-black font-semibold rounded hover:bg-yellow-400 hover:text-black transition"
               >
                 Saiba mais
-              </a>
+              </Link>
             </section>
           </div>
         </div>

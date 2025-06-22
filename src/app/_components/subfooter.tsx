@@ -11,7 +11,7 @@ export function SubFooter() {
     { id: 3, titulo: "Linkedin", link: "#", icon: LinkedinLogoIcon },
   ];
   return (
-    <div className="flex text-center text-black bg-white flex-col w-[100%] h-[4.5rem] justify-center">
+    <div className="flex text-center text-black bg-white flex-col w-[100%] h-auto sm:h-[4.5rem] justify-center">
       <h1>2025 Day Transportes &copy; Todos os direitos reservados. </h1>
       <ul className="flex justify-center gap-4 mt-2">
         {socials.map((item) => {

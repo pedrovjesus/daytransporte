@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Footer } from "../_components/footer";
 import { Hero } from "../_components/hero";
 import { Navbar } from "../_components/navbar";
@@ -9,7 +10,7 @@ export default function AboutPage() {
       <Navbar />
       <Hero />
 
-      <div className="max-w-5xl mx-auto px-6 py-12 text-gray-800">
+      <div className="max-w-5xl mx-auto px-6 py-12 text-gray-800 flex-col flex">
         <h1 className="text-4xl font-bold mb-6">Sobre a DayTransporte</h1>
 
         <p className="mb-5">
@@ -40,6 +41,12 @@ export default function AboutPage() {
           Estamos prontos para levar sua carga a qualquer lugar do país com
           segurança, eficiência e a certeza de um serviço bem executado.
         </p>
+        <Link
+          href="/contact"
+          className="mt-5 block xl:max-w-sm w-full text-center px-2 py-2 border-2 border-yellow-400 text-black font-semibold rounded hover:bg-yellow-400 hover:text-black transition mx-auto"
+        >
+          Fale conosco
+        </Link>
       </div>
 
       <Footer />

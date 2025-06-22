@@ -66,9 +66,14 @@ export function Navbar() {
             </div>
             <div className="flex flex-col items-start text-black">
               <h3 className="text-white text-base">Estamos aqui!</h3>
-              <p className="text-sm text-white">
-                Rua exemplo, 22 - centro, Campinas
-              </p>
+              <a
+                className="text-sm text-white"
+                href="https://www.google.com/maps/place/R.+Jos%C3%A9lio+Manuel+da+Silva,+142+-+Parque+Orestes+Ongaro,+Hortol%C3%A2ndia+-+SP,+13183-091/data=!4m2!3m1!1s0x94c8bc1f2c8b0c9d:0x76fd6a353db053da?sa=X&ved=1t:242&ictx=111"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                R. Joselio Manuel da Silva, 142 - Hortôlandia - SP
+              </a>
             </div>
           </div>
           <div className="flex items-center gap-1">
