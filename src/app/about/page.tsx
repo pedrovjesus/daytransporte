@@ -1,6 +1,7 @@
 import { Footer } from "../_components/footer";
 import { Hero } from "../_components/hero";
 import { Navbar } from "../_components/navbar";
+import { SubFooter } from "../_components/subfooter";
 
 export default function AboutPage() {
   return (
@@ -42,6 +43,7 @@ export default function AboutPage() {
       </div>
 
       <Footer />
+      <SubFooter />
     </section>
   );
 }

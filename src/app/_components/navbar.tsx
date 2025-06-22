@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import logo from "../../../public/logo.jpeg";
 import Image from "next/image";
+import Link from "next/link";
 import {
   MapPinIcon,
   EnvelopeIcon,
@@ -14,7 +15,6 @@ export function Navbar() {
   return (
     <nav className="fixed top-0 left-0 w-full z-50 bg-gradient-to-r from-black to-black sm:pt-4 sm:pb-4 sm:px-4 p-1 shadow-md">
       <div className="container mx-auto flex flex-wrap items-center justify-between relative">
-        {/* Logo */}
         <div
           className={`
     ${menuOpen ? "hidden" : "flex"} 
@@ -30,8 +30,6 @@ export function Navbar() {
             className="rounded-[5px] sm:w-[160px] sm:h-[80px] w-[8rem] h-[4.3rem] object-cover"
           />
         </div>
-
-        {/* Botão hamburguer mobile */}
         <button
           className="md:hidden z-60 ml-auto block text-yellow-600"
           onClick={() => setMenuOpen(!menuOpen)}
@@ -61,21 +59,18 @@ export function Navbar() {
             )}
           </svg>
         </button>
-
-        {/* Contato e informações - ocultar no mobile e mostrar no md */}
         <div className="hidden xl:flex items-center space-x-6 ml-[180px]">
-          {/* Localização */}
           <div className="flex items-center gap-1">
             <div className="rounded-full bg-[#cacacab9] p-2">
               <MapPinIcon weight="fill" className="w-7 h-7 text-white" />
             </div>
             <div className="flex flex-col items-start text-black">
               <h3 className="text-white text-base">Estamos aqui!</h3>
-              <p className="text-sm text-white">Rua exemplo, 22 - centro, Campinas</p>
+              <p className="text-sm text-white">
+                Rua exemplo, 22 - centro, Campinas
+              </p>
             </div>
           </div>
-
-          {/* Telefone */}
           <div className="flex items-center gap-1">
             <div className="rounded-full bg-[#cacacab9] p-2">
               <PhoneIncomingIcon className="w-7 h-7 text-white" />
@@ -87,8 +82,6 @@ export function Navbar() {
               </a>
             </div>
           </div>
-
-          {/* Email */}
           <div className="flex items-center gap-1">
             <div className="rounded-full bg-[#cacacab9] p-2">
               <EnvelopeIcon className="w-7 h-7 text-white" />
@@ -101,34 +94,32 @@ export function Navbar() {
             </div>
           </div>
         </div>
-
-        {/* Menu de navegação */}
         <div
           className={`${
             menuOpen ? "flex" : "hidden"
           } w-full md:flex md:w-auto ml-auto flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-8 mt-4 md:mt-0`}
         >
-          <a
-            href="#home"
+          <Link
+            href="/"
             className="text-white hover:text-white hover:font-bold transition text-[18px] font-Rubik"
             onClick={() => setMenuOpen(false)}
           >
             Home
-          </a>
-          <a
-            href="#sobre"
+          </Link>
+          <Link
+            href="/about"
             className="text-white hover:text-white hover:font-bold transition text-[18px] font-Rubik"
             onClick={() => setMenuOpen(false)}
           >
             Sobre
-          </a>
-          <a
-            href="#contato"
+          </Link>
+          <Link
+            href="/contact"
             className="text-white hover:text-white hover:font-bold transition text-[18px] font-Rubik"
             onClick={() => setMenuOpen(false)}
           >
             Contato
-          </a>
+          </Link>
         </div>
       </div>
     </nav>
