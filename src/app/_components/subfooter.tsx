@@ -6,9 +6,8 @@ import {
 
 export function SubFooter() {
   const socials = [
-    { id: 1, titulo: "Instagram", link: "#", icon: InstagramLogoIcon },
-    { id: 2, titulo: "Facebook", link: "#", icon: FacebookLogoIcon },
-    { id: 3, titulo: "Linkedin", link: "#", icon: LinkedinLogoIcon },
+    { id: 1, titulo: "Instagram", link: "https://www.instagram.com/daytransportes?utm_source=qr&igsh=czlvbzRwbDB4Ymg4", icon: InstagramLogoIcon },
+    { id: 3, titulo: "Linkedin", link: "https://www.linkedin.com/company/daytransportes/posts/?feedView=all", icon: LinkedinLogoIcon },
   ];
   return (
     <div className="flex text-center text-black bg-white flex-col w-[100%] h-auto sm:h-[4.5rem] justify-center">
@@ -29,7 +28,7 @@ export function SubFooter() {
         Desenvolvido por{" "}
         <strong className="text-yellow-300">
           <a
-            href="https://github.com/pedrovjesus"
+            href="https://pedrovjesus.github.io/portifolio-react/"
             target="_blank"
             rel="noopener noreferrer"
           >

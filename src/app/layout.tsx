@@ -23,7 +23,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="pt-BR">
       <head>
         <link
           href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap"

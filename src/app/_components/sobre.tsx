@@ -40,9 +40,9 @@ export function About() {
           <div className="p-6 text-gray-800 max-w-3xl mx-auto ml-2">
             <h2 className="text-2xl font-bold mb-4">Sobre Nós</h2>
             <section className="mb-8">
-              <h2 className="text-xl font-bold mb-4">Sobre a DayTransporte</h2>
+              <h2 className="text-xl font-bold mb-4">Sobre a DayTransportes</h2>
               <p className="mb-4">
-                A <strong>DayTransporte</strong> é uma empresa especializada em{" "}
+                A <strong>DayTransportes</strong> é uma empresa especializada em{" "}
                 <strong>soluções logísticas e transporte rodoviário</strong> de
                 cargas. Atuamos com excelência, oferecendo serviços de{" "}
                 <strong>entregas seguras, pontuais e eficientes</strong> para
@@ -94,10 +94,10 @@ export function About() {
           <h2 className="text-3xl font-bold mb-6">Sobre Nós</h2>
           <section>
             <h3 className="text-2xl font-semibold mb-5">
-              Sobre a DayTransporte
+              Sobre a DayTransportes
             </h3>
             <p className="mb-5">
-              A <strong>DayTransporte</strong> é uma empresa especializada em{" "}
+              A <strong>DayTransportes</strong> é uma empresa especializada em{" "}
               <strong>soluções logísticas e transporte rodoviário</strong> de
               cargas. Atuamos com excelência, oferecendo serviços de{" "}
               <strong>entregas seguras, pontuais e eficientes</strong> para
@@ -145,9 +145,9 @@ export function About() {
           <div className="text-gray-800 max-w-xl">
             <h2 className="text-2xl font-bold mb-4">Sobre Nós</h2>
             <section className="mb-8">
-              <h3 className="text-xl font-bold mb-4">Sobre a DayTransporte</h3>
+              <h3 className="text-xl font-bold mb-4">Sobre a DayTransportes</h3>
               <p className="mb-4">
-                A <strong>DayTransporte</strong> é uma empresa especializada em{" "}
+                A <strong>DayTransportes</strong> é uma empresa especializada em{" "}
                 <strong>soluções logísticas e transporte rodoviário</strong> de
                 cargas. Atuamos com excelência, oferecendo serviços de{" "}
                 <strong>entregas seguras, pontuais e eficientes</strong> para

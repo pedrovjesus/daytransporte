@@ -6,12 +6,14 @@ import { Service } from "./_components/servicos";
 import { WeServices } from "./_components/nossos-servicos";
 import { Contacts } from "./_components/contatos";
 import { SubFooter } from "./_components/subfooter";
+import { WhatsappIcon } from "./_components/whatsapp";
 
 export default function Home() {
   return (
     <div>
       <Navbar />
       <Hero />
+      <WhatsappIcon />
       <About />
       <Service />
       <WeServices />

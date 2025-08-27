@@ -11,10 +11,10 @@ export default function AboutPage() {
       <Hero />
 
       <div className="max-w-5xl mx-auto px-6 py-12 text-gray-800 flex-col flex">
-        <h1 className="text-4xl font-bold mb-6">Sobre a DayTransporte</h1>
+        <h1 className="text-4xl font-bold mb-6">Sobre a DayTransportes</h1>
 
         <p className="mb-5">
-          Fundada em <strong>2020</strong>, a <strong>DayTransporte</strong>{" "}
+          Fundada em <strong>2020</strong>, a <strong>DayTransportes</strong>{" "}
           nasceu com o propósito de oferecer soluções logísticas inteligentes,
           ágeis e seguras para empresas em todo o Brasil.
         </p>

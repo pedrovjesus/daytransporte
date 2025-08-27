@@ -24,7 +24,7 @@ export function Navbar() {
         >
           <Image
             src={logo}
-            alt="DayTransporte"
+            alt="DayTransportes"
             quality={100}
             priority
             className="rounded-[5px] sm:w-[160px] sm:h-[80px] w-[8rem] h-[4.3rem] object-cover"
@@ -82,7 +82,12 @@ export function Navbar() {
             </div>
             <div className="flex flex-col items-start text-black">
               <h3 className="text-white text-base">Fale conosco</h3>
-              <a href="#" className="text-sm text-white hover:underline">
+              <a
+                href="tel:+5519988888102"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-sm text-white hover:underline"
+              >
                 (19) 998374-6788
               </a>
             </div>
@@ -93,8 +98,13 @@ export function Navbar() {
             </div>
             <div className="flex flex-col items-start text-black">
               <h3 className="text-white text-base font-medium">Email</h3>
-              <a href="#" className="text-sm text-white hover:underline">
-                contato@daytransportes.com
+              <a
+                href="mailto: contato@daytransportes.com.br"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-sm text-white hover:underline"
+              >
+                contato@daytransportes.com.br
               </a>
             </div>
           </div>

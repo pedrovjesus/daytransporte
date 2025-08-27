@@ -17,20 +17,27 @@ export function Contacts() {
           Entre em Contato
         </h2>
 
-        <form className="flex flex-col md:flex-row gap-6 w-full">
+        <form
+          action="php/contato.php" // envia os dados para PHP
+          method="POST"
+          className="flex flex-col md:flex-row gap-6 w-full"
+        >
           <div className="flex flex-col gap-4 w-full md:w-1/2">
             <input
               type="text"
+              name="nome"
               placeholder="Seu nome"
               className="p-3 rounded bg-white text-gray-800 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-red-500"
             />
             <input
               type="email"
+              name="email"
               placeholder="Seu email"
               className="p-3 rounded bg-white text-gray-800 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-red-500"
             />
             <input
               type="text"
+              name="telefone"
               placeholder="Seu telefone"
               className="p-3 rounded bg-white text-gray-800 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-red-500"
             />
@@ -38,21 +45,22 @@ export function Contacts() {
 
           <div className="w-full md:w-1/2">
             <textarea
+              name="mensagem"
               placeholder="Sua mensagem"
               rows={7}
               className="w-full h-full p-3 rounded bg-white text-gray-800 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-red-500 resize-none"
             ></textarea>
           </div>
-        </form>
 
-        <div className="mt-6 flex justify-center">
-          <button
-            type="submit"
-            className="w-full max-w-sm px-6 py-3 border-2 border-yellow-400 text-white font-semibold rounded hover:bg-yellow-400 hover:text-black transition"
-          >
-            Enviar Mensagem
-          </button>
-        </div>
+          <div className="mt-6 flex justify-center">
+            <button
+              type="submit"
+              className="w-full max-w-sm px-6 py-3 border-2 border-yellow-400 text-white font-semibold rounded hover:bg-yellow-400 hover:text-black transition"
+            >
+              Enviar Mensagem
+            </button>
+          </div>
+        </form>
       </div>
     </section>
   );

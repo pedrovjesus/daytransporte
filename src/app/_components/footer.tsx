@@ -12,8 +12,8 @@ export function Footer() {
         {/* Contato */}
         <div>
           <h4 className="text-lg font-semibold mb-2">Contato</h4>
-          <p>Telefone: (19) 98888-8102</p>
-          <p>Email: contato@daytransporte.com.br</p>
+          <a href="tel:+5519988888102">Telefone: (19) 98888-8102</a><br/>
+          <a href="mailton: contato@daytransportes.com.br">Email: contato@daytransportes.com.br</a>
         </div>
 
         {/* Opcional: Social / Institucional */}

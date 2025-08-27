@@ -4,7 +4,7 @@ export function WeServices() {
       <h1 className="text-4xl font-bold text-gray-900 mb-6">Nossos Serviços</h1>
 
       <p className="text-lg text-gray-700 mb-8">
-        A <strong>Day Transportes</strong> oferece soluções completas em
+        A <strong>DayTransportes</strong> oferece soluções completas em
         transporte e logística, atendendo empresas e demandas em todo o
         território nacional. Nossos serviços são projetados para garantir
         eficiência, pontualidade e segurança em cada etapa do processo.
